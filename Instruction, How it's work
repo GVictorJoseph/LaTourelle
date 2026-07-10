@@ -1,0 +1,12 @@
+Php, Css, Pd need to be in the same folder.
+In this main folder, create the compteur.txt ,  tableau.txt and a 'uploads' folder.
+
+By using the webpage, the users can send files to the server. The files are saved in the uploads folder.
+The user can also see and download these files, and the files inside the 'PersonalDocumentation' folder (inside the mainfolder).
+All the user's files are nammed X.extension, X with the value of the counter (write in the compteur.txt, 0 to 100).
+
+Pure Data write in a array each files in the folder, by trying all the extension possible for each number bewteen 0 and 100.
+When one file is in a array it's sonify by PureData, until 5 second or find a new file to take it place.
+
+A ultrasonic sensor is on the sculpture, permitting to rise the  volume and turn on the motor fan when somebody is here. 
+I would like try to permit the fan to follow the public.
