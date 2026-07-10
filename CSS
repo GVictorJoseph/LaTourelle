@@ -1,0 +1,136 @@
+body {
+    background-image: url(Img/BackGround.jpg);
+    color : rgba(0, 0, 0, 0.792);
+}
+#main {
+    /* display: grid; */
+    /* justify-content: space-around; */
+    text-align: center;
+    margin: auto;
+    /* background-color: aquamarine; */
+
+    max-width: 900px;
+    width: 320px;
+}
+
+
+#intro{
+    display: inline-block;
+    text-align: justify;
+    width: 380px;
+    height: 300px;
+    background-image: url(Img/Intro.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: -50px;
+}
+
+#formulaireFichier{
+    width: 100%;
+    height: 360px;
+
+    background-image:url('img/Formulaire.svg') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size:contain; */
+    /* position:fixed;   */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+#Consent{
+    width: 120%;
+    height: 400px;
+    background-image: url(Img/Consent.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    text-align: justify;
+    margin-left: -28px;
+}
+
+#ConsentForm{
+margin-top: 50px;
+margin-left: 40px;
+}
+
+#SendConsent{
+    margin-left: 200px;
+}
+
+#DownloadUserFile{
+    height: 1000px; 
+    width: 130%;
+    margin-left: -50px;
+    /* background-color: aquamarine; */
+    background-image: url('img/DLContent.svg');
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size:100%;
+}
+
+#DownloadPersonalFile{
+    height: 1000px; 
+    width: 130%;
+    margin-left: -50px;
+    /* background-color: aquamarine; */
+    background-image: url('img/DLContent.svg');
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size:100%;
+}
+table{
+    display: block;
+    /* margin-left: 40px; */
+    margin-right: 0;
+    width: 100%;
+}
+
+td{
+    max-width: 300px;
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+}
+
+#Infos{
+    /* margin-left: 16%; */
+    text-align: justify;
+
+}
+
+#PartiesDL{
+    display: block;
+}
+
+
+#Texte{
+    margin-top: 50px;
+    width: 350px;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.submit{
+    background: red;
+    color: white;
+}
+textarea{
+    background-color: brown;
+    color: white;
+}
+input[type="text"]{
+    background-color: brown;
+    color:white
+}
+input[type="submit"]{
+    background-color: brown;
+    color:white
+}
+input[type="file"]::file-selector-button{
+    background-color: brown;
+    color: white;
+}
