@@ -85,8 +85,8 @@
 <!-- COUNTER PHP -->
         <?php
             session_start();
-            $fichier = 'compteur.txt'; 
-            $tableau=unserialize ( urldecode ( file_get_contents ( "tableau.txt" ) ) );;
+            $fichier = 'ArrayAndCountFile/compteur.txt'; 
+            $tableau=unserialize ( urldecode ( file_get_contents ( "ArrayAndCountFile/tableau.txt" ) ) );;
 
             $Origine = <<<HTML
                 <a href='uploads/$file' download='$file'> $file</a><br>;
@@ -113,7 +113,7 @@
             if ($compteur % 100 ==0){
                 rmdirRecursive('uploads');
                 $tableau=array();
-                file_put_contents ( "tableau.txt" , urlencode ( serialize ( $tableau ) ) );
+                file_put_contents ( "ArrayAndCountFile/tableau.txt" , urlencode ( serialize ( $tableau ) ) );
                 $compteur=0;
                 file_put_contents($fichier, $compteur);
 
@@ -143,7 +143,7 @@
                         
                             // echo $compteur;
                             $tableau[$compteurFile ] = [$_POST['Title'], $_POST['Description'], '<a href="uploads/'.$file.'" download="'.$file.'"> '.$file.'</a>'];
-                            file_put_contents ( "tableau.txt" , urlencode ( serialize ( $tableau ) ) );
+                            file_put_contents ( "ArrayAndCountFile/tableau.txt" , urlencode ( serialize ( $tableau ) ) );
                             if (!isset($_SESSION['visite_comptee'])) {
                                         $compteur = (int)file_get_contents($fichier);
                                         $compteur++;
@@ -192,7 +192,7 @@
         <div id="DownloadUserFile" style="display:inline-block">
             <?php
                 $tableau=array();
-                $tableau = unserialize ( urldecode ( file_get_contents ( "tableau.txt" ) ) );
+                $tableau = unserialize ( urldecode ( file_get_contents ( "ArrayAndCountFile/tableau.txt" ) ) );
                 $col ='Title, Infos, Download';
                 echo "<p></br></br></br></p>";
                 echo utilHtmlTable($col, $tableau);
