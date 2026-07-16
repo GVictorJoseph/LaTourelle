@@ -132,7 +132,7 @@
                         $extension_upload = $infosfichier['extension']; //On les stockes dans un tableau
                     
                 //File extension, not autorize images, only documents. 
-                        $extensions_autorisees = array('png', 'pdf','pd', 'txt', 'doc'); //Les extensions autorisées
+                        $extensions_autorisees = array('png', 'pdf','pd', 'txt', 'doc', 'php', 'html', 'css'); //Les extensions autorisées
                         $name = $infosfichier['filename'];
                         $file = '' .$compteurFile. '.' .$extension_upload;
                         //On test les extensions autorisées
